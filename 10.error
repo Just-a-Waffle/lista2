@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in $@;do
+        if [ "ls" $i ]
+                then echo "$1" SIM
+                else echo NAO
+        fi
+done
