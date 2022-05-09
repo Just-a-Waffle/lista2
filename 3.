@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ $(ls $1) ]; then
+        [ $(wc -l < $1) -gt 2 ] && echo GOOD
+fi
