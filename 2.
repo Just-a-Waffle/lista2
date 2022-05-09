@@ -1,0 +1,14 @@
+#!/bin/bash
+echo 'digite o nome de 4 arquivos!'
+read a b c d
+e=0
+n=dor
+for x in $a $b $c $d; do
+        l=$(wc -l <$x)
+        if [ $l -gt $e ]; then
+        e=$l
+        n=$x
+        fi
+done
+echo $e
+echo $n
