@@ -1,0 +1,7 @@
+#!/bin/bash
+
+calculo=`bc <<< $(cat a.txt)`
+echo $calculo
+
+calculo=`cat a.txt | bc`
+echo $calculo
